@@ -1,5 +1,6 @@
 import {
   AppBar,
+  Avatar,
   IconButton,
   InputBase,
   Link,
@@ -7,19 +8,21 @@ import {
 } from '@material-ui/core';
 import MenuIcon from '@material-ui/icons/Menu';
 import SearchIcon from '@material-ui/icons/Search';
+import SettingsIcon from '@material-ui/icons/Settings';
+import AppsIcon from '@material-ui/icons/Apps';
+import HelpOutlineIcon from '@material-ui/icons/HelpOutline';
 import { fade, makeStyles } from '@material-ui/core/styles';
 
 const useStyles = makeStyles((theme) => ({
   search: {
     position: 'relative',
     borderRadius: theme.shape.borderRadius,
-    backgroundColor: fade(theme.palette.common.white, 0.15),
+    backgroundColor: 'lightgrey',
     '&:hover': {
       backgroundColor: fade(theme.palette.common.white, 0.25),
     },
-    marginRight: theme.spacing(2),
-    marginLeft: 0,
-    width: '100%',
+    margin: 'auto',
+    width: '400px',
   },
   searchIcon: {
     padding: theme.spacing(0, 2),
@@ -42,6 +45,12 @@ const useStyles = makeStyles((theme) => ({
     [theme.breakpoints.up('md')]: {
       width: '20ch',
     },
+  },
+  icons: {
+    display: 'flex',
+    position: 'absolute',
+    right: 0,
+    paddingRight: '24px',
   },
 }));
 
@@ -66,6 +75,18 @@ const TopNav = () => {
                 input: classes.inputInput,
               }}
             />
+          </div>
+          <div className={classes.icons}>
+            <IconButton>
+              <HelpOutlineIcon />
+            </IconButton>
+            <IconButton>
+              <SettingsIcon />
+            </IconButton>
+            <IconButton>
+              <AppsIcon />
+            </IconButton>
+            <Avatar src="../media/jimmy.jpeg" />
           </div>
         </Toolbar>
       </AppBar>
