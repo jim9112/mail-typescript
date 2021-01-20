@@ -12,7 +12,7 @@ const SideMenu = () => {
   const classes = useStyles();
 
   return (
-    <Grid className={classes.root} item xs={3}>
+    <Grid className={classes.root} item xs={2}>
       <div>
         <Fab variant="extended">
           <AddIcon />

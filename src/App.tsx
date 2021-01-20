@@ -3,6 +3,7 @@ import TopNav from './components/TopNav';
 import { makeStyles } from '@material-ui/core/styles';
 import { Grid } from '@material-ui/core';
 import SideMenu from './components/SideMenu';
+import InBox from './components/InBox';
 
 const useStyles = makeStyles((theme) => ({
   app: {
@@ -16,6 +17,7 @@ function App() {
       <TopNav />
       <Grid container>
         <SideMenu />
+        <InBox />
       </Grid>
     </div>
   );
