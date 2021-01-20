@@ -1,6 +1,6 @@
-import classes from '*.module.css';
-import { Grid } from '@material-ui/core';
+import { Fab, Grid } from '@material-ui/core';
 import { makeStyles } from '@material-ui/core/styles';
+import AddIcon from '@material-ui/icons/Add';
 
 const useStyles = makeStyles((theme) => ({
   root: {
@@ -13,7 +13,10 @@ const SideMenu = () => {
 
   return (
     <Grid className={classes.root} item xs={3}>
-      <p>Side Menu</p>
+      <Fab variant="extended">
+        <AddIcon />
+        Compose
+      </Fab>
     </Grid>
   );
 };
