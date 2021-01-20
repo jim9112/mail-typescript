@@ -13,10 +13,12 @@ const SideMenu = () => {
 
   return (
     <Grid className={classes.root} item xs={3}>
-      <Fab variant="extended">
-        <AddIcon />
-        Compose
-      </Fab>
+      <div>
+        <Fab variant="extended">
+          <AddIcon />
+          Compose
+        </Fab>
+      </div>
     </Grid>
   );
 };
