@@ -4,6 +4,20 @@ export const emails = [
     starred: false,
     important: false,
     from: 'Joe Shmo',
-    Subject: 'BBQ on Saturday',
+    subject: 'BBQ on Saturday',
+  },
+  {
+    checked: false,
+    starred: false,
+    important: false,
+    from: 'Work',
+    subject: 'Meeting Tomorrow',
+  },
+  {
+    checked: false,
+    starred: false,
+    important: false,
+    from: 'Bill',
+    subject: 'Report Status',
   },
 ];
